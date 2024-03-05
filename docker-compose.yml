@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  vue-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: vue3-app
+    container_name: vue3-app-container
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./:/app
+    environment:
+      - NODE_ENV=development
