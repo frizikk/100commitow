@@ -11,7 +11,9 @@ defineProps({
   <div>
     <h1 class="green">{{ msg }}</h1>
     <span v-for="x in 10">
-      <h3>It's good to see you</h3>
+      <RouterLink :to="{ name: 'project', params: { id: x } }" style="display: block;">
+        Project {{ x }}
+      </RouterLink>
     </span>
   </div>
 </template>

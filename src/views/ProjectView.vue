@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>This is an project page</h1>
+    <h1>This is an project page {{ $route.params.id }}</h1>
   </div>
 </template>
 
